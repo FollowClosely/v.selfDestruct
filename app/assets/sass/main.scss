@@ -6,12 +6,17 @@
 }
 
 body {
+	font-family: $sans;
 	padding: 0;
 	margin: 0;
 	color: #fff;
 	a {
 		color: $blue;
 	}
+}
+
+input {
+	color: #eee;
 }
 
 .row {
@@ -22,21 +27,77 @@ body {
 }
 
 .nav { 
-	background: #eee; 
-	padding: 20px;
-  border-bottom: 1px solid #eee;
+	background: #fff; 
+	padding: .5rem 2rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .hero { 
-	padding: 20px;
+	height: 62vh;
 	max-width: 125px;
+	h1 {
+		padding-top: 16vh;
+		font-size: 4em;
+	} .hero-wrapper {
+		padding-top: 1.25rem;
+	}
 }
 
+
+.hero-wrapper .btn {
+	padding: 12px 24px 10px;
+	border-radius: 0;
+	font-size: 1.25em;
+	border: 1px solid #fff;
+	color: #fff;
+  background-color: rgba(0,0,0,.5);
+  &:hover{
+  	background-color: rgba(0,116,228,.50);
+  }
+}
+
+.hero-wrapper .btn-active {
+	background-color: rgba(0,116,228,.75);
+	margin-bottom: 2rem;
+	&:after {
+		content: '';
+    border-radius: 0!important;
+    bottom: -2rem;
+    background: 0 0!important;
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-left: -5px;
+    top: auto;
+    position: absolute;
+    left: 48%;
+	}
+}
+
+.form-wrapper {
+	position: relative;
+}
+
+.form-wrapper input {
+	border-radius: 5px;
+	padding: 19px;
+	font-size: 1.25em;
+	border: none;
+}
+
+
 .banner { 
-	background-color: $darkBlueTrans; 
+	background-color: rgba(24,52,93,.85);
 	padding: 20px;
 	max-width: 125px;
+	position: absolute;
+	min-height: 60px;
+  bottom: 0;
+	width: 100%
 }
+
 
 .slides { 
 	li {
@@ -88,6 +149,77 @@ body {
 
 
 
+
+
+
+.logo img {
+	width: 15rem;
+		padding-top: 0.5rem;
+
+}
+
+.nav-li {
+	list-style-type: none;
+	padding-top: 1rem;
+		font-size: 1.15em;
+	a {
+		color: $darkGrey;
+		padding-right: 1em;
+	}
+	a:hover {
+		color: $bluer;
+		text-decoration: none;
+	}
+}
+
+
+.nav-flex {
+	display: flex;
+}
+.search {
+	flex: 1;
+	margin-left: 2rem;
+	font-size: 1.15em;
+	padding-top: 0.725rem;
+	input {
+		border-radius: 5px;
+		width: 100%;
+		padding-left: 6px;
+	} button {
+		position: absolute;
+		background: $bluer;
+		right: 1.95rem;
+		top: 1.15rem;
+		border: #eee;
+		border-radius:5px;
+	}
+}
+
+.nav-ul {
+	display: flex;
+}
+
+span.btn-inner-wrapper {
+	position: relative;
+	margin: 0 100px
+}
+
+.btn-inside {
+	position: absolute;
+	height: 44px;
+	border-radius: 5px;
+	background: $blue;
+	padding: 0 2.5rem;
+	// right: 100px;
+}
+
+.form-below {
+	// background: $blue;
+	// padding: 100px;
+} li {
+	list-style-type: none;
+	position: block;
+}
 
 .resource {
  width: 100%
